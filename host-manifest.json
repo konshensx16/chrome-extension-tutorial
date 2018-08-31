@@ -1,0 +1,12 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// in case of linux this needs to be in the "~/.config/google-chrome/NativeMessagingHosts/what.ever.name.you.want.json" //
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+	"name": "overseas.media.natice.app.example",
+	"description": "Something something",
+	"path": "/home/konshensx/Desktop/tutorial/chrome-extension/cppapp/app",
+	"type": "stdio",
+	"allowed_origins": [
+		"chrome-extension://dgmikkaldakeljkliklelimipmhdabfj/"
+	]	
+}

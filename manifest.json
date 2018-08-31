@@ -1,0 +1,24 @@
+{
+	"name": "NativeMessaging API video",
+	"version": "1.0",
+	"description": "A basic example using cpp",
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"run_at": "document_idle",
+			"js": ["contentScript.js"]
+		}
+	],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	/////////////////////////////////////////////////////////////
+	// must specify the nativeMessaging otherwise it wont work //
+	/////////////////////////////////////////////////////////////
+	"permissions": [
+		"nativeMessaging"
+	],
+	"browser_action": {},
+	"manifest_version": 2
+}
